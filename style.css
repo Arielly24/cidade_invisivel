@@ -10,4 +10,41 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Karla', sans-serif; 
+}
+
+.logo img{
+    width: 120px;
+
+}
+
+.links ul{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  
+
+}
+
+header{
+  background-color: #000000AA;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 200px;
+  align-items: center;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover{
+  color: red;
+  transition: all 1s;
+  user-select: none;
 }
