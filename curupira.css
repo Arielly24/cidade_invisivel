@@ -33,7 +33,9 @@
 
 }
 main{
-    padding: 25vh 10vw;
+    padding-top: 25vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
     flex-grow: 1;
 }
 
@@ -58,7 +60,7 @@ main h1{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
-
+   
 main h3{
 
     transform: rotate(270deg);
@@ -115,5 +117,6 @@ footer
     height: 30px;
     text-align: center;
     font-style: italic;
+    align-items: center;
 
 }

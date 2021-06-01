@@ -54,9 +54,13 @@ main h1{
   font-size: 70;
   font-weight: 200 ;
   max-width: 800px ;
-  font-weight: bold
-
+  font-weight: bold; 
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  position: relative;
 }
+
  main p{
    font-size: 25;
    font-family: "Arial";
@@ -104,6 +108,14 @@ main a:hover{
   left: 90vw;
   filter: brightness(10%);
   animation: voar 20s linear;
+}
+
+footer{
+    height: 30px;
+    text-align: center;
+    font-style: italic;
+    align-items: center;
+
 }
 
 @keyframes voar{ 
