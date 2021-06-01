@@ -10,9 +10,9 @@
 
         width: 100vw;
         height: 100vh;
-        background-image: url(img/iara2.jpg);
-        background-color:blac#0f0f0f55;
-        background-blend-mode: darken;
+        background-image: url(img/fundo.jpg);
+        background-color:black;
+        
         background-size: cover;
         background-position: right top;
         display: flex;
@@ -24,7 +24,7 @@
 
   header {
 
-    background-color: #000000AA;
+    background-color: rgb(69, 69, 240);
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -40,7 +40,7 @@ main{
 }
 
 .barra{
-    color: red;
+    color: rgb(69, 69, 240);
     font-size: 40px;
 }
 
@@ -55,7 +55,7 @@ main{
 
 main h1{
     font-family: calibri;
-    font-size: 100px;
+    font-size: 90px;
     color: rgba(8, 8, 8, 0);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
@@ -64,7 +64,8 @@ main h1{
 main h3{
 
     transform: rotate(270deg);
-    color: red;
+    color: rgb(69, 69, 240);
+    font-size: 30px;
 
 
 }
@@ -72,9 +73,7 @@ main h3{
 
     font-size: 20px;
     font-weight: 200; 
-    max-width: 300px; 
-    color: whitesmoke;
-    font-weight: bold; 
+    max-width: 400px; 
 }
 
 
@@ -87,32 +86,53 @@ h2, h4{
 }
 
 .links ul {
-
     display: flex;
     gap: 20px;
-    color: white;
-    list-style: none;
-
-}
-
-
-
-.links a {
-
+    list-style-type: none;
+  }
+  
+  .links a{
     color: white;
     text-decoration: none;
     font-size: 20px;
     user-select: none;
     transition: all 1s;
-
-}
-
-
-
-.links a:hover {
-    color: red;
-
-}
+  }
+  
+  .links a:hover {
+    color: black;
+  }
+  
+  .links ul .submenu {
+    margin-top: 1px;
+    display: none;
+    position: absolute;
+    font-size: 12px;
+  }
+  
+  .links li ul{
+    position: relative;
+  }
+  
+  .submenu {
+    background-color: rgb(48, 48, 48);
+  }
+  
+  .submenu a{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .submenu a:hover {
+    border-left: 10px solid black;
+  }
+  
+  .links li:hover > .submenu{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
 footer
 
 {

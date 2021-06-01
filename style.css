@@ -6,7 +6,7 @@
 body{
   width:100vw ;
   height: 100vh ;
-  background-image: url(cidade\ invisivel\ 2.jpg);
+  background-image: url(img/cidade\ invisivel\ 2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
@@ -20,16 +20,56 @@ body{
 
 .logo img{
     width: 120px;
-
 }
 
-.links ul{
+.links ul {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  
-
 }
+
+.links a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  user-select: none;
+  transition: all 1s;
+}
+
+.links a:hover {
+  color: red;
+}
+
+.links ul .submenu {
+  margin-top: 1px;
+  display: none;
+  position: absolute;
+  font-size: 12px;
+}
+
+.links li ul{
+  position: relative;
+}
+
+.submenu {
+  background-color: #000000BB;
+}
+
+.submenu a{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submenu a:hover {
+  border-left: 10px solid red;
+}
+
+.links li:hover > .submenu{
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 header{
   background-color: #000000AA;
